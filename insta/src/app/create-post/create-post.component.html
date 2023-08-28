@@ -1,0 +1,11 @@
+<div>
+    <h1>Create New Post</h1>
+    <form>
+        <label for="username">username</label>
+        <input type="text" id="username" [(ngModel)]="newPost.username"/> <br>
+        <label for="desc">Desc</label>
+        <textarea type="text" id="desc" name="desc" [(ngModel)]="newPost.desc"></textarea>
+
+        <button (click)="createPost()">Create</button>
+    </form>
+</div>

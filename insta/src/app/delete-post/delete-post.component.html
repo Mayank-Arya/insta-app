@@ -1,0 +1,12 @@
+<p>delete-post works!</p>
+
+
+<div>
+    <h1>Delete Post</h1>
+    <div *ngFor="let post of posts" class="post">
+        <p>{{post.username}}</p>
+        <p>{{post.desc}}</p>
+
+        <button (click)="deletePost(post)"></button>
+    </div>
+</div>
